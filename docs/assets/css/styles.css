@@ -2204,12 +2204,28 @@ main {
 }
 .intro-3 {
   padding: 80px 0 40px;
-  background: url("./../img/intro/intro-bg-3.jpg") center no-repeat;
-  background-size: cover;
+  position: relative;
+  background: var(--cveta-zelenyy);
+}
+.intro-3__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.intro-3__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .intro-3__row {
   display: flex;
   gap: 60px;
+  position: relative;
+  z-index: 2;
 }
 .intro-3__main {
   display: flex;
